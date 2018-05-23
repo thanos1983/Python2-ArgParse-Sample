@@ -10,7 +10,9 @@ name = "pypi"
 
 
 [packages]
+
 requests = "*"
+service-identity = "*"
 
 
 [requires]
