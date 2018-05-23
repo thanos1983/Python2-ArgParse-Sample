@@ -13,6 +13,7 @@ name = "pypi"
 
 requests = "*"
 service-identity = "*"
+argumentparser = "*"
 
 
 [requires]

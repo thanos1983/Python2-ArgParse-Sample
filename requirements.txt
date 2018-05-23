@@ -1,4 +1,5 @@
 adium-theme-ubuntu==0.3.4
+argumentparser==1.2.1
 asn1crypto==0.24.0
 async-timeout==2.0.0
 attrs==18.1.0
