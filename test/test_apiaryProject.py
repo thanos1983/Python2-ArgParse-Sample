@@ -3,7 +3,7 @@ import unittest
 from apiaryProject import main
 
 
-class TestProcessesMethods(unittest.TestCase):
+class TestGetAndPostMethods(unittest.TestCase):
 
     def setUp(self):
         self.page = main.handle_get("https://apiary.docs.apiary.io")
@@ -25,6 +25,21 @@ class TestProcessesMethods(unittest.TestCase):
         self.page = None
         self.post = None
         self.error_content = None
+
+
+class ParserTest(unittest.TestCase):
+
+    def setUp(self):
+        self.parser = main.create_parser()
+
+    def test_something(self):
+        # args = self.parser.url(['-u', 'https://thanos'])
+        print(self.parser)
+        # self.assertTrue(args.url, 'Test')
+
+    def tearDown(self):
+        # empty list (not to keep in memory)
+        self.parser = None
 
 
 if __name__ == '__main__':
