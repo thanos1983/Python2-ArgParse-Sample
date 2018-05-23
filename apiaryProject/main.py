@@ -1,9 +1,9 @@
 import argparse
-import os
-import sys
 import inspect
-import validators
+import os
+
 import requests
+import validators
 
 
 def url_validation(page):
