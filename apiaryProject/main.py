@@ -76,7 +76,7 @@ def handle_post(page, file_to_send):
                          data=open(path, 'rb'), headers=headers)
 
 
-def main():
+if __name__ == '__main__':
     # create the parser based on the desired flags
     parser = create_parser()
     # process the input parameters
@@ -97,7 +97,3 @@ def main():
             param_error = "Please provide a valid url. Sample: '-u https://apiary.docs.apiary.io' -g or -p [FILE]"
             print(param_error)
             parser.print_help()
-
-
-if __name__ == '__main__':
-    main()
